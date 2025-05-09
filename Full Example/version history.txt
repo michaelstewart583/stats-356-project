@@ -24,5 +24,15 @@ D learning rate = 8e^4
 
 Training Order: one D, one G
 
-Result:
+Result: generator loss was way too much
+
+
+v1.3
+goal make D less good -> reduce learning rate to be two times the learning rate of G
+G learning rate = 2e^4
+D learning rate = 4e^4
+
+Training Order: one D, one G
+
+Result: 
 
