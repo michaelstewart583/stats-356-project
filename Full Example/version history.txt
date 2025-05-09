@@ -1,0 +1,28 @@
+v1:
+G learning rate = 2e^4
+D learning rate = 2e^4
+
+Training Order: one D, one G
+
+
+v1.1: 
+goal: make it so that the generator loss is less -> increase the number generator training periods and put it before the discriminator training step
+G learning rate = 2e^4
+D learning rate = 2e^4
+
+Training Order: two G, one D
+
+Result: 
+d loss was higher than g loss
+d accuracy too low -> generator not improving
+
+
+v1.2:
+goal: make the generator loss a little bit less than for v1, also make the d loss a tad bit lower -> increase the learning rate of D to be 4 times G learning rate, train D before g
+G learning rate = 2e^4
+D learning rate = 8e^4
+
+Training Order: one D, one G
+
+Result:
+
